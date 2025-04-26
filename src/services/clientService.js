@@ -6,5 +6,11 @@ export const registerClient = (clientData) =>
 export const getClients = () => 
   api.get("/clients");
 
+export const fetchClientDetails = (clientId) =>
+  api.get(`/clients/${clientId}`);
+
 export const enrollClient = (clientId, programId) =>
   api.post(`/clients/${clientId}/programs`, { programId });
+
+export const updateClient = (clientId, clientData) =>
+  api.put(`/clients/${clientId}`, clientData);

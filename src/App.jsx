@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ViewClient from "./components/ViewClient";
+import Programs from "./pages/Programs";  
+import AddProgram from "./pages/AddProgram"; 
 
 export default function App() {
   return (
@@ -17,6 +19,8 @@ export default function App() {
             <Route path="/clients" element={<Clients />} />
             <Route path="/clients/:id" element={<ViewClient />} />
             <Route path="/clients/enroll" element={<EnrollClients />} />
+            <Route path="/programs" element={<Programs />} />
+            <Route path="/programs/add" element={<AddProgram />} />
           </Routes>
         </div>
         <Footer />

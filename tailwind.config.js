@@ -9,7 +9,7 @@ module.exports = {
       'primary': '#27AAE1',
       'secondary': '#FF9237',
       'success': '#05B313',
-      'warning': '#FBBD23',
+      'hover': '#FBBD23',
       'error': '#E73E3E'
     },},
   },

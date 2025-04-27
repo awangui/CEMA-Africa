@@ -46,11 +46,14 @@ export default function EnrollClient({ onSuccess }) {
     e.preventDefault();
     setIsLoading(true);
     setError(null);
-    setSuccess(null); 
+    setSuccess(null);
+  
     try {
       await registerClient(formData);
       setSuccess("Client registered successfully!");
-      onSuccess(); // Refresh client list
+      if (onSuccess) {
+        onSuccess(); 
+      }
       setFormData({
         first_name: "",
         last_name: "",
@@ -65,9 +68,10 @@ export default function EnrollClient({ onSuccess }) {
       setError("Failed to register client. Please try again.");
       console.error("Registration failed:", error);
     } finally {
-      setIsLoading(false);
+      setIsLoading(false); 
     }
   };
+  
 
   const handleProgramChange = (selectedOptions) => {
     const selectedProgramIds = selectedOptions.map((option) => option.value);

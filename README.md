@@ -1,12 +1,53 @@
-# React + Vite
+# CEMA Health Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CEMA Health Management System is a health information management platform designed to improve healthcare delivery and accessibility across Africa. This project aims to provide a robust solution for managing patient records, appointments, and other healthcare-related data.
 
-Currently, two official plugins are available:
+## Features
+- **Health Programs**: Create, read, update, and delete health programs (e.g., TB, Malaria, HIV).
+- **Client Registration**: Register new clients and store their information securely.
+- **Program Enrollment**: Enroll clients into one or more health programs.
+- **Client Search**: Search for clients by name and view detailed profiles.
+- **CRUD Operations**: Perform create, read, update, and delete operations for both clients and programs.
+- **RESTful API**: Expose APIs for external integrations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend**: React.js, Axios, React Router, Tailwind CSS
+- **Backend**: Flask, SQLAlchemy, PostgreSQL
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Deployment
+
+- **Frontend**: [CEMA Health Management System](https://cema-health-management-system.netlify.app/)
+- **Backend Live Link**: [CEMA Health API](https://cema-health-winl.onrender.com/)
+- **Backend Repo**: [CEMA Backend Repo](https://github.com/awangui/health-info-backend)
+
+## Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/awangui/CEMA-Africa.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd CEMA-Africa
+    ```
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+4. Start the development server:
+    ```bash
+    npm run dev
+    ```
+
+## Usage
+1. Open your browser and navigate to `http://localhost:5173`.
+2. Explore the features to manage healthcare data effectively.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+For questions or support, please contact [anitawangui22@gmail.com].

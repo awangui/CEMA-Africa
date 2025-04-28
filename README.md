@@ -1,6 +1,5 @@
 # CEMA Health Management System
-
-CEMA Health Management System is a health information management platform designed to improve healthcare delivery and accessibility across Africa. This project aims to provide a robust solution for managing patient records, appointments, and other healthcare-related data.
+CEMA Health Management System is a health information management platform designed to improve healthcare delivery and accessibility across Africa. This project provides a robust solution for managing patient records, health programs, and other healthcare-related data efficiently and securely.
 
 ## Features
 - **Health Programs**: Create, read, update, and delete health programs (e.g., TB, Malaria, HIV).

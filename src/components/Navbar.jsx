@@ -58,13 +58,13 @@ const Navbar = () => {
             Manage Programs
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to="/logout" className={getNavLinkClass} onClick={closeMenu}>
             <div className="flex items-center gap-2">
               <MdLogout className="text-secondary" /> Logout
             </div>
           </NavLink>
-        </li>
+        </li> */}
       </ul>
 
       {/* Hamburger for Mobile */}
@@ -107,7 +107,7 @@ const Navbar = () => {
               Manage Programs
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               to="/logout"
               className={getNavLinkClass}
@@ -117,7 +117,7 @@ const Navbar = () => {
                 <MdLogout className="text-secondary" /> Logout
               </div>
             </NavLink>
-          </li>
+          </li> */}
         </ul>
       )}
     </nav>

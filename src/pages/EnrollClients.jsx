@@ -52,18 +52,21 @@ export default function EnrollClient({ onSuccess }) {
       await registerClient(formData);
       setSuccess("Client registered successfully!");
       if (onSuccess) {
-        onSuccess(); 
+      onSuccess(); 
       }
       setFormData({
-        first_name: "",
-        last_name: "",
-        date_of_birth: "",
-        gender: "",
-        phone_number: "",
-        email: "",
-        address: "",
-        programs: [],
+      first_name: "",
+      last_name: "",
+      date_of_birth: "",
+      gender: "",
+      phone_number: "",
+      email: "",
+      address: "",
+      programs: [],
       });
+      setTimeout(() => {
+        navigate('/clients');
+    }, 1000);
     } catch (error) {
       setError("Failed to register client. Please try again.");
       console.error("Registration failed:", error);

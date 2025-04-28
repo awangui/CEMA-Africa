@@ -84,17 +84,20 @@ export default function EditClient({ clientId, onSuccess }) {
     setIsLoading(true);
     setError(null);
     setSuccess(null);
-    
+  
     try {
-      // Prepare the data for API request
       const updateData = {
         ...formData,
-        // Send programs as an array of IDs
         programs: formData.programs
       };
-      
+  
       await updateClient(clientId, updateData);
       setSuccess("Client updated successfully!");
+  
+      setTimeout(() => {
+        navigate("/clients");
+      }, 1000);
+      
       if (onSuccess) onSuccess();
     } catch (error) {
       console.error("Update failed:", error);
@@ -103,7 +106,7 @@ export default function EditClient({ clientId, onSuccess }) {
       setIsLoading(false);
     }
   };
-
+  
   const handleProgramChange = (selectedOptions) => {
     // Extract just the IDs from the selected options
     const selectedProgramIds = selectedOptions.map(option => option.value);

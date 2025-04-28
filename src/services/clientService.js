@@ -24,3 +24,17 @@ export const updateClient = (clientId, clientData) =>
 
 export const deleteClient = (clientId) =>
   api.delete(`/clients/${clientId}`);
+
+import axios from 'axios';
+
+export const searchClients = async (query) => {
+  try {
+    const response = await axios.get(`http://127.0.0.1:5000/clients/search`, {
+      params: { q: query }  
+    });
+    return response.data;
+  } catch (error) {
+    console.error("Error searching clients:", error);
+    throw error; 
+  }
+};
